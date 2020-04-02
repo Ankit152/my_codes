@@ -1,2 +1,2 @@
-# number-to-words
-This is a basic C program that converts a number into words.
+# MY CODES
+This is a repository where I put my codes to practice git commands and to get familiar with the GitHub.

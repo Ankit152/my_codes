@@ -1,5 +1,5 @@
 import java.util.*;
-public class compare2 {
+class compare2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int a,b;
@@ -16,5 +16,6 @@ public class compare2 {
         else{
             System.out.println(a+" and "+b+" are equal!!!");
         }
+        sc.close();
     }
 }

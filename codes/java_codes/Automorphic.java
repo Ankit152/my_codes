@@ -17,5 +17,6 @@ class automorphic{
         }
         if(flag) System.out.println("Automorphic Number !!!");
         else System.out.println("Not an Automorphic NUmber !!!");
+        sc.close();
     }
 }

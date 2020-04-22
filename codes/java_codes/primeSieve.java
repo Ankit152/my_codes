@@ -1,11 +1,12 @@
 import java.util.*;
-public class primeSieve {
+class primeSieve {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n;
         System.out.println("Enter the range of prime: ");
         n=sc.nextInt();
         prime(n);
+        sc.close();
     }
     public static void prime(int n){
         boolean[] p=new boolean[n+1];

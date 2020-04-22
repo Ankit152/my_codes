@@ -1,5 +1,5 @@
 import java.util.*;
-public class factorial {
+class factorial {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         long n,i,fact=1;
@@ -9,5 +9,6 @@ public class factorial {
             fact*=i;
         }
         System.out.println("Factorial of "+n+" is: "+fact+" !!!");
+        sc.close();
     }
 }

@@ -1,5 +1,5 @@
 import java.util.*;
-public class maxof3{
+class maxof3{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number 1: ");
@@ -16,5 +16,6 @@ public class maxof3{
             m=c;
         }
         System.out.println("Maxium of the three is: "+m);
+        sc.close();
     }
 }

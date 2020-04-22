@@ -1,5 +1,5 @@
 import java.util.*;
-public class grading {
+class grading {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         char grade;
@@ -27,5 +27,6 @@ public class grading {
             default:
                 System.out.println("Grade should be between A-F only");
         }
+        sc.close();
     }
 }

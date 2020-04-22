@@ -7,5 +7,6 @@ class seriesSum{
         int s1=n*(n+1)/2;
         int s2=4*k*(k+1)/2;
         System.out.println(s1-s2);
+        sc.close();
     }
 }

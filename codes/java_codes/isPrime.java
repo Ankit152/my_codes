@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.Math;
-public class isPrime{
+class isPrime{
     public static void main(final String[] args){
         final Scanner sc = new Scanner(System.in);
         long n;
@@ -25,5 +25,6 @@ public class isPrime{
         else{
             System.out.println(n+" is not a prime number!!!");
         }
+        sc.close();
     }
 }

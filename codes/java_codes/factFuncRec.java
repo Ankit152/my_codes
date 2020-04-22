@@ -1,5 +1,5 @@
 import java.util.*;
-public class factFuncRec {
+class factFuncRec {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n,fact;
@@ -7,6 +7,7 @@ public class factFuncRec {
         n = sc.nextLong();
         fact = factorial(n);    
         System.out.println("The factorial of "+n+" is "+fact+"!!!");
+        sc.close();
     }
     public static long factorial(long n){
         if(n<=1){

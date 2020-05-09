@@ -19,3 +19,15 @@ void insert_beg(node *&head,int data){
     head=temp;
     return;
 }
+void insert_end(node *&head,int data){
+    if(head==NULL){
+        head=new node(data);
+        return;
+    }
+    node *temp=head;
+    while(temp->next!=NULL){
+        temp-temp->next;
+    }
+    temp->next=new node(data);
+    return;
+}

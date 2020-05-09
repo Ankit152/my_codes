@@ -31,3 +31,35 @@ void insert_end(node *&head,int data){
     temp->next=new node(data);
     return;
 }
+void del_beg(node *&head){
+    node *temp=head;
+    if(head==NULL){
+        cout<<"UNDERFLOW!!!\n";
+    }
+    else{
+        cout<<"Element deleted: "<<temp->data<<" !!!\n";
+        head=head->next;
+        delete(temp);
+    }
+    return;
+}
+void del_end(node *&head){
+    node *temp=head,*t;
+    if(head==NULL){
+        cout<<"UNDERFLOW!!!\n";
+    }
+    else if(head->next==NULL){
+        cout<<"Element deleted: "<<temp->data<<" !!!\n";
+        head=head->next;
+        delete(temp);
+    }
+    else{
+        while(temp->next->next!=NULL){
+            temp=temp->next;
+        }
+        t=temp->next;
+        temp->next=NULL;
+        delete(t);
+    }
+    return;
+}

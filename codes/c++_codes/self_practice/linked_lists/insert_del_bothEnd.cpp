@@ -63,3 +63,16 @@ void del_end(node *&head){
     }
     return;
 }
+void display(node *head){
+    if(head==NULL){
+        cout<<"Empty!!!\n";
+        return;
+    }
+    cout<<"The linked list is: ";
+    while(head!=NULL){
+        cout<<head->data<<"->";
+        head=head->next;
+    }
+    cout<<"NULL\n";
+    return;
+}

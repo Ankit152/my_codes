@@ -76,3 +76,45 @@ void display(node *head){
     cout<<"NULL\n";
     return;
 }
+int main(){
+    node *head=NULL;
+    int ch,data;
+    do{
+        cout<<"1. Insert at beginning\n";
+        cout<<"2. Insert at end\n";
+        cout<<"3. Delete at beginning\n";
+        cout<<"4. Delete at end\n";
+        cout<<"5. Display the elements\n";
+        cout<<"0. Exit\n";
+        cout<<"Enter your choice: ";
+        cin>>ch;
+        if(ch==0){
+            exit(0);
+        }
+        switch(ch){
+            case 1:
+               cout<<"\nEnter the data: ";
+               cin>>data;
+               insert_beg(head,data) ;
+               break;
+            case 2:
+                cout<<"\nEnter the data: ";
+                cin>>data;
+                insert_end(head,data);
+                break;
+            case 3:
+                del_beg(head);
+                break;
+            case 4:
+                del_end(head);
+                break;
+            case 5:
+                display(head);
+                break;
+            default:
+                cout<<"Wrong choice!!!\n";
+                break;
+        }
+    }while(ch!=0);
+    return 0;
+}
